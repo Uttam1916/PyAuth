@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <script >
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
         function getformaction(action){
             let form=document.getElementById("auth-form")
             if (action === "login"){
@@ -16,11 +16,13 @@
                 form.method="post"
                 form.submit()
             }
-}</script>
+        }
+    </script>
     <title>Flask authentication</title>
 </head>
-<body>
-    <header>Helo</header>
+
+<body class= " bg-yellow-200 font-sans text-gray-900 flex flex-col items-center m-0  text-center  ">
+    <header class=" w-full bg-gray-50 p-5 ring-1 text-3xl font-mono " >PyAuth</header>
     {% block body%}
 
     {% endblock %}

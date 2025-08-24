@@ -1,13 +1,13 @@
 {%extends "base.html" %}
 
 {% block body %}
-<div class="container">
-    <h1>Welcome</h1>
+<div class=" bg-gray-50 p-8 ring-1  m-14 rounded-lg max-w-md w-full">
+    <h1  class="mb-7 text-4xl font-sans  " > Hello user! </h1>
     <form action="{{url_for('login')}}" method="post" id="auth-form">
-        <input type="text" name="username" placeholder="username" class="input-field" id="">
-        <input type="password" name="password" placeholder="password" class="input-field"  id="">
-        <input type="submit"  value="Login" class="input-field"  onclick="getformaction('login')">
-        <input type="button" value="Register" class="input-field"  onclick="getformaction('register')">
+        <input type="text" name="username" placeholder="username" class="w-full m-3 p-3 rounded-md border-black border-solid box-border"  id="">
+        <input type="password" name="password" placeholder="password" class="w-full m-3 p-3 rounded-md border-black border-solid box-border"  id="">
+        <input type="submit"  value="Login" class=" font-sans w-full m-3 p-3 rounded-md border-black border-solid box-border bg-blue-800 text-white"  onclick="getformaction('login')">
+        <input type="button" value="Register" class=" font-sans w-full m-3 p-3 rounded-md border-black border-solid box-border bg-green-700 text-white"  onclick="getformaction('register')">
     </form>
 </div>
 {% endblock %}
