@@ -63,8 +63,8 @@ def register():
 @app.route("/dashboard")
 def dashboard():
     if "username" in session:
-        return f"Welcome {session['username']}!"
-    return redirect(url_for("home"))
+        return render_template("dashboard.html",username=session["username"])
+    return redirect(url_for('home'))
 
 if __name__ == "__main__":  
     with app.app_context():
