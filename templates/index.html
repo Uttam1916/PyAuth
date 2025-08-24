@@ -8,6 +8,9 @@
         <input type="password" name="password" placeholder="password" class="w-full m-3 p-3 rounded-md border-black border-solid box-border"  id="">
         <input type="submit"  value="Login" class=" font-sans w-full m-3 p-3 rounded-md border-black border-solid box-border bg-blue-800 text-white"  onclick="getformaction('login')">
         <input type="button" value="Register" class=" font-sans w-full m-3 p-3 rounded-md border-black border-solid box-border bg-green-700 text-white"  onclick="getformaction('register')">
+        <input type="button" value="Google" class="font-sans w-full m-3 p-3 rounded-md border-black border-solid box-border bg-red-400 text-white" 
+       onclick="window.location.href = '{{ url_for('login_google') }}'">
+
     </form>
 </div>
 {% endblock %}
